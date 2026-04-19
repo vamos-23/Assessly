@@ -3,7 +3,7 @@ import ProtectedRoute from "./routes/ProtectedRoute";
 import PublicRoute from "./routes/PublicRoute";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Registration";
-import Dashboard from "./pages/Dashboard";
+import AdminDashboard from "./pages/dashboard/AdminDashboard";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
           path="/dashboard"
           element={
             <ProtectedRoute>
-              <Dashboard />
+              <AdminDashboard />
             </ProtectedRoute>
           }
         />
