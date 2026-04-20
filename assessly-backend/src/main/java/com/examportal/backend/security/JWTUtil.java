@@ -2,15 +2,15 @@ package com.examportal.backend.security;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
 import java.security.Key;
 import java.util.Date;
 
 @Component
 public class JWTUtil {
-
-    private final String SECRET = "mysecretkeymysecretkeymysecretkey123";
+    @Value("${JWT_SECRET}")
+    private String SECRET;
     private final long EXPIRATION_TIME = 1000L * 60 * 60 * 24 * 7;
 
     private Key getSigningKey() {
