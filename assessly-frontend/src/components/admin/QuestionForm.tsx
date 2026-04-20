@@ -117,7 +117,7 @@ export default function QuestionForm({ onCreate, initialData }: Props) {
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className={`w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all active:scale-[0.98] ${initialData ? "bg-amber-600 hover:bg-amber-500" : "bg-blue-600 hover:bg-blue-500"}`}
+        className={`w-full py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-[0.98] ${initialData ? "bg-amber-600 hover:bg-amber-500" : "bg-blue-600 hover:bg-blue-500"}`}
       >
         {loading ? (
           "Processing..."

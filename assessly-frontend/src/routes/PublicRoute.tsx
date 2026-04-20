@@ -11,9 +11,9 @@ export default function PublicRoute({ children }: PublicRouteProps) {
   if (!token) return children;
   const role = getUserRole();
   if (role === "ADMIN") {
-    return <Navigate to="/dashboard" />;
+    return <Navigate to="/admin/dashboard" />;
   }
   if (role === "STUDENT") {
-    return <Navigate to="/student" />;
+    return <Navigate to="/student/dashboard" />;
   }
 }

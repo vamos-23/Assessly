@@ -21,7 +21,6 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Use the helper for clean initialization
   const [adminName] = useState<string>(() => {
     const user = getStoredUser();
     return user?.name || "Admin";
@@ -75,7 +74,7 @@ export default function AdminDashboard() {
           <div className="absolute -left-4 top-0 w-24 h-24 bg-blue-500/10 blur-[80px] -z-10" />
           <div className="space-y-1">
             <div className="flex items-center gap-2 text-blue-400 font-bold text-xs uppercase tracking-widest">
-              <LayoutDashboard size={14} /> Management Portal
+              <LayoutDashboard size={14} />Exam Management Portal
             </div>
             <h1 className="text-4xl font-extrabold text-white tracking-tight">
               Welcome, {adminName}
@@ -86,7 +85,7 @@ export default function AdminDashboard() {
           </div>
           <button
             onClick={() => navigate("/admin/submissions")}
-            className="bg-white/10 hover:bg-green-500/20 transition px-5 py-2.5 rounded-xl text-sm font-medium text-white border border-white/10"
+            className="bg-white/10 hover:bg-green-500/20 cursor-pointer transition px-5 py-2.5 rounded-xl text-sm font-medium text-white border border-white/10"
           >
             View Submissions
           </button>

@@ -12,7 +12,6 @@ export default function StudentDashboard() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Clean initialization using your helper
   const [userName] = useState<string>(() => {
     const user = getStoredUser();
     return user?.name || "Student";

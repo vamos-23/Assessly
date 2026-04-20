@@ -98,13 +98,13 @@ export default function QuestionsTable({ questions, onDelete, onEdit }: Props) {
             <div className="flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-all">
               <button
                 onClick={() => onEdit(q)}
-                className="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 rounded-lg transition-colors"
+                className="p-2 text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 rounded-lg transition-colors cursor-pointer"
               >
                 <Edit3 size={18} />
               </button>
               <button
                 onClick={() => onDelete(q.id)}
-                className="p-2 text-gray-400 hover:text-red-400 hover:bg-red-400/10 rounded-lg transition-colors"
+                className="p-2 text-gray-400 hover:text-red-400 hover:bg-red-400/10 rounded-lg transition-colors cursor-pointer"
               >
                 <Trash2 size={18} />
               </button>
