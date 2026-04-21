@@ -3,7 +3,6 @@ package com.examportal.backend.controller;
 import com.examportal.backend.dto.SubmitExamRequest;
 import com.examportal.backend.entity.*;
 import com.examportal.backend.service.*;
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
